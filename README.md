@@ -1,4 +1,4 @@
-Great! Since the backend is in Node.js and the frontend is in React, let's update the README file accordingly:
+
 
 # DigiStream Project
 
