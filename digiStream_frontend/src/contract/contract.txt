@@ -1,0 +1,32 @@
+pragma solidity ^0.8.0;
+
+contract WalletFee {
+    address public owner;
+    mapping(address => bool) public paidUsers;
+
+    event FeePaid(address indexed user, uint256 amount);
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only contract owner can call this function.");
+        _;
+    }
+
+    function connectWallet() external payable {
+        require(!paidUsers[msg.sender], "User has already paid the fee.");
+
+        if (msg.value != 0.1 ether) {
+            revert("Incorrect fee amount. Please send 0.1 ETH.");
+        }
+
+        paidUsers[msg.sender] = true;
+        emit FeePaid(msg.sender, msg.value);
+    }
+
+    function withdrawFees() external onlyOwner {
+        payable(owner).transfer(address(this).balance);
+    }
+}
