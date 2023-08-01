@@ -49,17 +49,7 @@ To get the DigiStream project up and running on your local machine, follow these
      ```
      This will launch the frontend application on your local machine, and you can access it using your web browser at `http://localhost:3000` or another port if specified.
 
-## Contributing
 
-Contributions to the DigiStream project are welcome! If you find any bugs, want to add new features, or improve the project, feel free to submit pull requests or raise issues on the GitHub repository.
-
-## License
-
-The DigiStream project is open-source and distributed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
-
-## Acknowledgments
-
-We would like to thank all the contributors who have helped to make this project possible.
 
 ---
 
