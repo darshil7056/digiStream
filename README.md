@@ -53,4 +53,3 @@ To get the DigiStream project up and running on your local machine, follow these
 
 ---
 
-Again, please ensure you customize the instructions with the appropriate values for your project. This updated template should give you a more accurate representation of the DigiStream project with Node.js backend and React frontend.
